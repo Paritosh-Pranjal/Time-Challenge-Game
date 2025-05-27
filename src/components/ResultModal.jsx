@@ -14,9 +14,11 @@ const ResultModal = forwardRef(function ResultModal(
     return {
       open() {
         dialog.current.showModal();
+        document.body.style.overflow = "hidden";
       },
     };
   });
+
   return (
     <dialog ref={dialog} className="result-modal">
       <h2>

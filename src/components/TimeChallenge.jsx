@@ -17,6 +17,7 @@ const TimeChallenge = ({ title, targetTime }) => {
 
   function handleReset() {
     setTimeRemaining(targetTime * 1000);
+    document.body.style.overflow = "scroll";
   }
 
   const handleStart = () => {
